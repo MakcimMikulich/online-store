@@ -24,18 +24,18 @@
 	}
 }
 
-.mySwiper {
+.SwiperDogsLine {
 	box-sizing: border-box;
 	padding: 10px 0;
 }
 
-.mySwiper .swiper-slide {
+.SwiperDogsLine .swiper-slide {
 	width: 25%;
 	height: 100%;
 	opacity: 0.6;
 }
 
-.mySwiper .swiper-slide-thumb-active {
+.SwiperDogsLine .swiper-slide-thumb-active {
 	opacity: 1;
 
 	img {

@@ -3,7 +3,7 @@ import { ourDogs } from "../../db";
 import styles from "./DogInfo.module.scss";
 import { Button, Heading } from "../../ui";
 import chat from "../../assets/Dog/chat.png";
-import { DogSwiper } from "../Swiper/Swiper.tsx";
+import { SwiperDogs } from "../SwiperDogs/SwiperDogs.tsx";
 
 export const DogInfo = () => {
 	const { dogId } = useParams<{ dogId: string }>();
@@ -15,7 +15,7 @@ export const DogInfo = () => {
 		<div className="container">
 			<section className={styles.dog__wrapper}>
 				<div className={styles.slider}>
-					<DogSwiper />
+					<SwiperDogs />
 				</div>
 
 				<div className={styles.dog__info}>

@@ -14,7 +14,7 @@ import { ourDogs } from "../../db/cardsDogs.data.ts";
 import { useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
-export const DogSwiper = () => {
+export const SwiperDogs = () => {
 	const [thumbsSwiper, setThumbsSwiper] = useState<SwiperRef | null>(null);
 
 	const slides: JSX.Element[] = [];
@@ -38,7 +38,7 @@ export const DogSwiper = () => {
 				navigation={true}
 				thumbs={thumbsSwiper ? { swiper: thumbsSwiper.swiper } : undefined}
 				modules={[FreeMode, Navigation, Thumbs]}
-				className="mySwiper2"
+				className="SwiperDogsMain"
 			>
 				{slides}
 			</Swiper>
@@ -54,7 +54,7 @@ export const DogSwiper = () => {
 				freeMode={true}
 				watchSlidesProgress={true}
 				modules={[FreeMode, Navigation, Thumbs]}
-				className="mySwiper"
+				className="SwiperDogsLine"
 			>
 				{slides}
 			</Swiper>
