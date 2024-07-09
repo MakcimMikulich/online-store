@@ -18,6 +18,7 @@ export const SwiperPagination = ({ slides }: SwiperPaginationProps) => {
 				spaceBetween={30}
 				freeMode={true}
 				pagination={{
+					type: "progressbar",
 					clickable: true,
 				}}
 				breakpoints={{
