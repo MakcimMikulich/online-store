@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "./ElfsightWidget.scss";
 
 export const ElfsightWidget = () => {
 	useEffect(() => {

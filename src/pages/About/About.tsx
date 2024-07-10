@@ -1,5 +1,5 @@
 import { ElfsightWidget, Header, SwiperPagination } from "../../components";
-import { PromInfo, SectionHeading } from "../../ui";
+import { FAQ, PromInfo, SectionHeading } from "../../ui";
 import styles from "./About.module.scss";
 import imgCattery from "../../assets/About/about-cattery.webp";
 // @ts-ignore
@@ -58,8 +58,18 @@ export const About = () => {
 			<section>
 				<div style={{ marginBottom: "-7vw" }} className="container">
 					<SectionHeading title="Lets see on map" note="Where our pets?" />
+					<MapChart />
 				</div>
-				<MapChart />
+			</section>
+			<section>
+				<div className="container">
+					<SectionHeading
+						title="We were ready for this"
+						note="Do you have any questions?"
+					/>
+
+					<FAQ />
+				</div>
 			</section>
 			<section>
 				<div className="container">
