@@ -5,11 +5,6 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "./swiper.scss";
-
-// type SwiperRef = {
-// 	swiper: typeof Swiper;
-// };
-
 import { ourDogs } from "../../db/cardsDogs.data.ts";
 import { useState } from "react";
 import { JSX } from "react/jsx-runtime";

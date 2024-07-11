@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./FAQ.scss";
 // @ts-ignore
 import Accordion from "accordion-js";
