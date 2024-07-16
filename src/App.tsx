@@ -16,10 +16,12 @@ function ScrollToTop() {
 function App() {
 	return (
 		<div className="app">
-			<ScrollToTop />
-			<Outlet />
+			<main>
+				<ScrollToTop />
+				<Outlet />
+				{/* <ScrollRestoration /> */}
+			</main>
 			<Footer />
-			{/* <ScrollRestoration /> */}
 		</div>
 	);
 }

@@ -7,9 +7,54 @@ import { MapChart } from "./MapChart.jsx";
 import { Button } from "../../ui/index.js";
 import img from "../../assets/Dog/CustomersSlider.png";
 
-export const About = () => {
-	const slides = [img, img, img, img, img, img, img, img, img];
+const slides = [img, img, img, img, img, img, img, img, img];
 
+const sections = [
+	{
+		content: (
+			<div className="container">
+				<SectionHeading title="Our Story" note="What is your way?" />
+				<SwiperPagination slides={slides} />
+			</div>
+		),
+	},
+	{
+		content: (
+			<div className="container">
+				<PromInfo />
+			</div>
+		),
+	},
+	{
+		content: (
+			<div style={{ marginBottom: "-7vw" }} className="container">
+				<SectionHeading title="Lets see on map" note="Where our pets?" />
+				<MapChart />
+			</div>
+		),
+	},
+	{
+		content: (
+			<div className="container">
+				<SectionHeading
+					title="We were ready for this"
+					note="Do you have any questions?"
+				/>
+
+				<FAQ />
+			</div>
+		),
+	},
+	{
+		content: (
+			<div className="container">
+				<ElfsightWidget />
+			</div>
+		),
+	},
+];
+
+export const About = () => {
 	return (
 		<>
 			<section className={styles.cattery}>
@@ -44,38 +89,9 @@ export const About = () => {
 					</div>
 				</div>
 			</section>
-			<section>
-				<div className="container">
-					<SectionHeading title="Our Story" note="What is your way?" />
-					<SwiperPagination slides={slides} />
-				</div>
-			</section>
-			<section>
-				<div className="container">
-					<PromInfo />
-				</div>
-			</section>
-			<section>
-				<div style={{ marginBottom: "-7vw" }} className="container">
-					<SectionHeading title="Lets see on map" note="Where our pets?" />
-					<MapChart />
-				</div>
-			</section>
-			<section>
-				<div className="container">
-					<SectionHeading
-						title="We were ready for this"
-						note="Do you have any questions?"
-					/>
-
-					<FAQ />
-				</div>
-			</section>
-			<section>
-				<div className="container">
-					<ElfsightWidget />
-				</div>
-			</section>
+			{sections.map((section, index) => (
+				<section key={index}>{section.content} </section>
+			))}
 		</>
 	);
 };
