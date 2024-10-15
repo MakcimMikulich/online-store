@@ -37,7 +37,10 @@ export const Category = () => {
 								</div>
 								<div className={styles.header__right}>
 									{fullField || (
-										<button onClick={() => setOpenFilter(!openFilter)}>
+										<button
+											className={styles.header__button}
+											onClick={() => setOpenFilter(!openFilter)}
+										>
 											Filter
 										</button>
 									)}

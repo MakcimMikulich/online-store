@@ -12,7 +12,7 @@ export const Footer = () => {
 					<ul className={styles.nav__links}>
 						{navLinks.map((navLink) => (
 							<Link key={navLink} to={navLink.toLowerCase()}>
-								<li>{navLink}</li>
+								<li className={styles.link__item}>{navLink}</li>
 							</Link>
 						))}
 					</ul>
@@ -24,16 +24,19 @@ export const Footer = () => {
 						))}
 					</ul>
 				</div>
-				<div className={styles.footer__info}>
-					<p className={styles.footer__rights}>
-						© 2022 Monito. All rights reserved.
-					</p>
-					<div className={styles.footer__image}>
+				<div className={styles.footer__info__wrapper}>
+					<div className={styles.footer__image__mobile}>
 						<img src={logo} alt="" />
 					</div>
-					<p className={styles.footer__policy}>
-						Terms of Service Privacy Policy
-					</p>
+					<div className={styles.footer__info}>
+						<p>© 2024 Monito. All rights reserved.</p>
+						<div className={styles.footer__image}>
+							<img src={logo} alt="" />
+						</div>
+						<p className={styles.footer__policy}>
+							Terms of Service Privacy Policy
+						</p>
+					</div>
 				</div>
 			</footer>
 		</div>

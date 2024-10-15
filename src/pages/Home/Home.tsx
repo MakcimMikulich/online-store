@@ -36,7 +36,7 @@ export const Home = () => {
 					{[1, 2, 3].map(() => (
 						<video
 							className={styles.video_block}
-							// autoPlay
+							autoPlay
 							loop
 							muted
 							playsInline
