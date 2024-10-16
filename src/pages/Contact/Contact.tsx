@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import styles from "./Contact.module.scss";
-import bg from "../../assets/Contact/bg_contact.webp";
+// import bg from "../../assets/Contact/bg_contact.webp";
 
 export const Contact = () => {
 	return (
