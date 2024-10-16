@@ -4,7 +4,7 @@ import {
 	createBrowserRouter,
 	Navigate,
 	RouterProvider,
-	ScrollRestoration,
+	// ScrollRestoration,
 } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.scss";
