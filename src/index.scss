@@ -28,6 +28,10 @@ body {
 	}
 }
 
+a[title] {
+	position: absolute !important;
+}
+
 .app {
 	overflow: hidden;
 	display: flex;
