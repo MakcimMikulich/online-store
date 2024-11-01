@@ -11,6 +11,59 @@
 	width: 50%;
 	height: auto;
 	margin-right: 34px;
+	display: flex;
+	flex-direction: column;
+}
+
+.slider__note {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 9px 12px;
+
+	border-radius: 10px;
+	background: var(
+		--Linear,
+		linear-gradient(103deg, #fceed5 6.43%, #fceed5 78.33%, #ffe7ba 104.24%)
+	);
+
+	.note__block {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		padding: 3px;
+
+		color: #002a48;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0;
+	}
+}
+
+.slider__share {
+	margin-top: 15px;
+	display: flex;
+	padding: 6px 10px;
+	gap: 21px;
+
+	.share__item {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+
+		span {
+			color: var(--Primary-Color-Dark-Blue-80, #002a48);
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+	}
+
+	.share__link {
+	}
 }
 
 .dog__info {
