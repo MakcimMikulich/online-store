@@ -13,10 +13,10 @@ import "./libs/vars.scss";
 import { About, Category, Contact, Dog, Home } from "./pages/index.ts";
 
 const PATH = {
-	HOME: "/home",
-	CATEGORY: "/category",
-	ABOUT: "/about",
-	CONTACT: "/contact",
+	HOME: "/home/",
+	CATEGORY: "/category/",
+	ABOUT: "/about/",
+	CONTACT: "/contact/",
 	DOG: "/category/:dogId",
 } as const;
 

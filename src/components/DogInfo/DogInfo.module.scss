@@ -5,6 +5,37 @@
 	border-radius: 20px;
 	border: 1px solid #ebeeef;
 	background: #fdfdfd;
+	position: relative;
+
+	@media (max-width: 992px) {
+		flex-direction: column;
+		padding: initial;
+		border: initial;
+	}
+}
+
+.dog__control {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	padding: 0px 16px 0px 3px;
+
+	div {
+		cursor: pointer;
+		color: #fdfdfd;
+		transition: color 0.2s;
+
+		&:hover {
+			color: #003459;
+		}
+	}
+
+	@media (max-width: 992px) {
+		display: flex;
+	}
 }
 
 .slider {
@@ -13,6 +44,25 @@
 	margin-right: 34px;
 	display: flex;
 	flex-direction: column;
+
+	@media (max-width: 992px) {
+		width: initial;
+		margin-right: initial;
+	}
+}
+
+.slider__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: 992px) {
+		.slider__note {
+			display: none;
+		}
+		.slider__share {
+			display: none;
+		}
+	}
 }
 
 .slider__note {
@@ -63,12 +113,63 @@
 	}
 
 	.share__link {
+		display: flex;
+		gap: 12px;
+
+		a {
+			padding: 4px;
+
+			&:hover {
+				transform: scale(1.2);
+				color: #1c3943;
+			}
+		}
 	}
 }
 
 .dog__info {
 	max-width: 517px;
 	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: 992px) {
+		max-width: initial;
+		padding: 34px 16px;
+		border-radius: 20px;
+		background: #fff;
+		box-shadow: 0px -6px 6px 0px rgba(0, 0, 0, 0.06);
+		margin-top: 25px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 40px;
+			height: 6px;
+			border-radius: 10px;
+			background: var(--Neutral-Color-20, #ccd1d2);
+			left: calc(50% - 20px);
+			top: 10px;
+		}
+	}
+
+	.slider__share {
+		display: none;
+	}
+
+	.slider__note {
+		display: none;
+	}
+
+	@media (max-width: 992px) {
+		.slider__note {
+			display: flex;
+		}
+		.slider__share {
+			display: flex;
+		}
+	}
 }
 
 .dog__ {
@@ -105,12 +206,13 @@
 	padding: 8px 0;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 26px;
 
 	&_row {
 		padding: 8px 0;
 		display: flex;
 		border-bottom: 1px solid #ebeeef;
-		color: #667479;
+		color: #003459;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 142.857%;
@@ -121,6 +223,10 @@
 		width: 100%;
 		padding: 4px 11px 2px 11px;
 		align-items: center;
+
+		@media (max-width: 476px) {
+			padding: 4px 0px 2px 0px;
+		}
 	}
 
 	&_value {
@@ -129,5 +235,9 @@
 		align-items: flex-start;
 		gap: 10px;
 		flex: 1 0 0;
+
+		@media (max-width: 476px) {
+			padding: 4px 0px 2px 0px;
+		}
 	}
 }
