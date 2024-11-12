@@ -1,15 +1,30 @@
 .background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	background: url("../../assets/Contact/bg_contact.webp"), no-repeat;
-	background-position: center;
-	background-size: cover;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// bottom: 0;
+	// height: 100%;
+	// background: url("../../assets/Contact/bg_contact.webp"), no-repeat;
+	// background-position: center;
+	// background-size: cover;
 
 	// img {
 	// 	height: 100%;
 	// }
+}
+
+.contact {
+	background: #fdfdfd;
+	display: flex;
+	flex-direction: column;
+}
+
+.prevImg__wrapper {
+	img {
+		height: 350px;
+		width: 100%;
+		object-fit: cover;
+		vertical-align: middle;
+	}
 }
