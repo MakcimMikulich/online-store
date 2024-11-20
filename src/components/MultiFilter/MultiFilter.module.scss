@@ -23,10 +23,6 @@
 	}
 }
 
-span {
-	color: #00171f;
-}
-
 .multifilter {
 	text-align: left;
 	min-width: 280px;
@@ -45,6 +41,10 @@ span {
 		padding: 20px;
 		min-width: 280px;
 		justify-content: center;
+	}
+
+	span {
+		color: #00171f;
 	}
 }
 
